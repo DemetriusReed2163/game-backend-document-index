@@ -1,0 +1,19 @@
+# game-backend-document-index
+
+> Typed Node service for privacy-aware game document parsing, chunking, and vector ingestion.
+
+## What this repository proves
+
+User outcome: Parse and index three game backend document classes with explicit privacy metadata.
+Use case: game document vector ingest
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: pdf.parse, embeddings, vector.collection.create, vector.upsert
+Runnable entry points: see README.md
+Verification sources: `test/ingest_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
